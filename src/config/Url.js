@@ -1,7 +1,6 @@
-// export const API_BASE_URL = 'http://102.37.211.135:4173/api/v1'; //staging url
+export const API_BASE_URL = 'http://102.37.211.135:4173/api/v1'; //staging url
 export const Image_URL = 'http://102.37.211.135:4173/'; //image url
 
-export const API_BASE_URL= 'https://jsonplaceholder.typicode.com/posts/1/'
 export const getApiUrl = endpoint => API_BASE_URL + endpoint;
 export const Login_API = getApiUrl('/auth/signin');
 export const ForgotPassword_API = getApiUrl('/auth/forgot-password');
@@ -16,6 +15,3 @@ export const GetProfile_API= getApiUrl("/auth/profile")
 export const UploadProfileImage_API= getApiUrl('/upload/images')
 export const EditProfie_API=getApiUrl('/auth/profile')
 export const Trademark_Appliaction_API=getApiUrl('/trademark')
-
-
-export const GetData= getApiUrl('comments')

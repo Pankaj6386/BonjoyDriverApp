@@ -41,8 +41,8 @@ const InputFields = ({
   editable,
   onPressDate
 }) => {
-  const [countryCode, setCountryCode] = useState('ZA'); // Default country code
-  const [callingCode, setCallingCode] = useState('27'); // Default calling code
+  const [countryCode, setCountryCode] = useState('IN'); // Default country code
+  const [callingCode, setCallingCode] = useState('91'); // Default calling code
 
   if (passwordField) {
     return (
@@ -165,12 +165,13 @@ const InputFields = ({
             }}
           />
         </View>
-        <LineSvg />
+        
         <TextView textSty={styles.callingCode}>+{callingCode}</TextView>
+        <LineSvg />
         <TextInput
-          placeholderTextColor={Colors.White}
+          // placeholderTextColor={Colors.White}
           style={styles.input}
-          placeholder="Enter phone number"
+          placeholder="Phone number"
           keyboardType={keyboardType} 
           maxLength={maxLength} // Restricts input to a maximum of 15 characters
           value={value}
@@ -185,28 +186,30 @@ export default memo(InputFields);
 
 const styles = StyleSheet.create({
   inputContainer: {
-    backgroundColor: Colors.TealBlue,
+    // backgroundColor: Colors.TealBlue,
     flexDirection: 'row',
     alignItems: 'center',
-    borderColor: Colors['Sea Green'],
-    borderWidth: 1,
+    borderColor: Colors['Black'],
+    borderBottomWidth: 1,
     borderRadius: 8,
     marginVertical: 10,
     paddingHorizontal: 10,
   },
   callingCode: {
     fontFamily: FontFamily.Bold,
-    color: Colors.White,
-    marginLeft: 10,
+    // color: Colors.White,
+    marginLeft: 1,
     fontSize: 15,
+    marginRight:7
   },
   input: {
     height: 52,
     fontSize: 15,
     paddingVertical: 10,
-    color: Colors.White,
+    color: Colors.Black,
     fontFamily: FontFamily.Bold,
     flex: 1,
+    marginLeft:5
   },
   lineSty: {
     marginLeft: 15,

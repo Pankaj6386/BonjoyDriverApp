@@ -2,7 +2,8 @@ export default {
   /********************* Logo Image **********************/
   logo: require('../assets/images/logo/Group.png'),
   /********************* Splash Screen Image **********************/
-  splashTopRight: require('../assets/images/splashImages/TopRight/Group.png'),
+  splashTopRight: require('../assets/images/splashImages/TopRight/logo.png'),
+  backgroundImage:require('../assets/images/splashImages/TopRight/bike.png'),
   splash: require('../assets/images/splashImages/Center/SkypePicture.png'),
   splashBottomLeft: require('../assets/images/splashImages/BottomLeft/Group.png'),
 
@@ -28,4 +29,9 @@ export default {
   docImage: require('../assets/images/DocumentImages/image.png'),
   paypal: require('../assets/images/paypalimg/image.png'),
   imageProfile: require('../assets/images/ImageProfile/image.png'),
+  homeIcon:require("../assets/images/BottomIcon/home.png"),
+  accountIcont:require("../assets/images/BottomIcon/account.png"),
+  motorIcont:require("../assets/images/BottomIcon/motorbike.png"),
+  walletIcont:require("../assets/images/BottomIcon/wallet.png"),
+  supportIcont:require("../assets/images/BottomIcon/support.png")
 };

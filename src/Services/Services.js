@@ -22,14 +22,6 @@ export const Call_GetListServices = url => {
     .catch(err => err);
 };
 
-
-export const GetListServices = url => {
-  return axiosInstance
-    .get(url)
-    .then(res => res)
-    .catch(err => err);
-};
-
 export const Call_InstancePostServices = (url, payload) => {
   return axiosInstance
     .post(url, payload)
